@@ -9,7 +9,7 @@ import UIKit
 
 class SignInViewController: UIViewController {
     
-    private let tempLabel: UILabel = {
+    private let singInLabel: UILabel = {
         let label = UILabel()
         label.text = "Sign in"
         label.font = UIFont(name:"HelveticaNeue-Bold", size: 25.0)
@@ -168,22 +168,23 @@ class SignInViewController: UIViewController {
         stackView.addArrangedSubview(sigInAppleButton)
         return stackView
     }()
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        setupElements(tempLabel, textFieldStackView, haveAccountStackView, signInGoogleStackView, signInAppleStackView)
-        setupSubViews(tempLabel, textFieldStackView, haveAccountStackView, signInGoogleStackView, signInAppleStackView)
+        setupElements(singInLabel, textFieldStackView, haveAccountStackView, signInGoogleStackView, signInAppleStackView)
+        setupSubViews(singInLabel, textFieldStackView, haveAccountStackView, signInGoogleStackView, signInAppleStackView)
         setupConstraints()
         
     }
     
     @objc private func logInButtonTapped() {
-
+        let logInVC = LogInViewController()
+        show(logInVC, sender: nil)
     }
     
     @objc private func signInButtonTapped() {
-
+        
     }
     
     
@@ -199,10 +200,10 @@ class SignInViewController: UIViewController {
     
     // MARK: - Setup Constraints
     private func setupConstraints() {
-        tempLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: view.bounds.height * 0.1).isActive = true
-        tempLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        singInLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: view.bounds.height * 0.1).isActive = true
+        singInLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
-        textFieldStackView.topAnchor.constraint(equalTo: tempLabel.bottomAnchor, constant: view.bounds.height * 0.1).isActive = true
+        textFieldStackView.topAnchor.constraint(equalTo: singInLabel.bottomAnchor, constant: view.bounds.height * 0.1).isActive = true
         textFieldStackView.widthAnchor.constraint(equalToConstant: view.bounds.width * 0.8).isActive = true
         textFieldStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
