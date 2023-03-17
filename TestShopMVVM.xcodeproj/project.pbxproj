@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AC9690CE29BCE9FF004A8A20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9690CD29BCE9FF004A8A20 /* AppDelegate.swift */; };
-		AC9690D229BCE9FF004A8A20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9690D129BCE9FF004A8A20 /* ViewController.swift */; };
+		AC9690D229BCE9FF004A8A20 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9690D129BCE9FF004A8A20 /* SignInViewController.swift */; };
 		AC9690D729BCEA00004A8A20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9690D629BCEA00004A8A20 /* Assets.xcassets */; };
 		AC9690DA29BCEA00004A8A20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9690D829BCEA00004A8A20 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		AC9690CA29BCE9FF004A8A20 /* TestShopMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestShopMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9690CD29BCE9FF004A8A20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC9690D129BCE9FF004A8A20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC9690D129BCE9FF004A8A20 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		AC9690D629BCEA00004A8A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC9690D929BCEA00004A8A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC9690DB29BCEA00004A8A20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				AC9690CD29BCE9FF004A8A20 /* AppDelegate.swift */,
-				AC9690D129BCE9FF004A8A20 /* ViewController.swift */,
+				AC9690D129BCE9FF004A8A20 /* SignInViewController.swift */,
 				AC9690D629BCEA00004A8A20 /* Assets.xcassets */,
 				AC9690D829BCEA00004A8A20 /* LaunchScreen.storyboard */,
 				AC9690DB29BCEA00004A8A20 /* Info.plist */,
@@ -131,7 +131,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC9690D229BCE9FF004A8A20 /* ViewController.swift in Sources */,
+				AC9690D229BCE9FF004A8A20 /* SignInViewController.swift in Sources */,
 				AC9690CE29BCE9FF004A8A20 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
