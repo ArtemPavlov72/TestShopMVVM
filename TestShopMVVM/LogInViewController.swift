@@ -33,6 +33,8 @@ class LogInViewController: UIViewController {
         name.borderStyle = .roundedRect
         name.returnKeyType = .next
         name.placeholder = "Password"
+        name.enablePasswordToggle()
+        name.isSecureTextEntry = true
         name.textAlignment = .center
         name.backgroundColor = UIColor(red: 0.90980, green: 0.90980, blue: 0.90980, alpha: 1)
         name.layer.masksToBounds = true
@@ -102,3 +104,5 @@ class LogInViewController: UIViewController {
         logInButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     }
 }
+
+

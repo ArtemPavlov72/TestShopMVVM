@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AC30A0B229C45229007E0B12 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30A0B129C45229007E0B12 /* LogInViewController.swift */; };
+		AC30A0B429C47B71007E0B12 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30A0B329C47B71007E0B12 /* UITextField.swift */; };
+		AC30A0B829C4888D007E0B12 /* User.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC30A0B629C4888D007E0B12 /* User.xcdatamodeld */; };
 		AC9690CE29BCE9FF004A8A20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9690CD29BCE9FF004A8A20 /* AppDelegate.swift */; };
 		AC9690D229BCE9FF004A8A20 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9690D129BCE9FF004A8A20 /* SignInViewController.swift */; };
 		AC9690D729BCEA00004A8A20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9690D629BCEA00004A8A20 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 
 /* Begin PBXFileReference section */
 		AC30A0B129C45229007E0B12 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		AC30A0B329C47B71007E0B12 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		AC30A0B729C4888D007E0B12 /* User.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = User.xcdatamodel; sourceTree = "<group>"; };
 		AC9690CA29BCE9FF004A8A20 /* TestShopMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestShopMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9690CD29BCE9FF004A8A20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC9690D129BCE9FF004A8A20 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC30A0B529C47B7B007E0B12 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC30A0B329C47B71007E0B12 /* UITextField.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		AC9690C129BCE9FF004A8A20 = {
 			isa = PBXGroup;
 			children = (
@@ -54,9 +66,11 @@
 		AC9690CC29BCE9FF004A8A20 /* TestShopMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				AC30A0B529C47B7B007E0B12 /* Extensions */,
 				AC9690CD29BCE9FF004A8A20 /* AppDelegate.swift */,
 				AC9690D129BCE9FF004A8A20 /* SignInViewController.swift */,
 				AC30A0B129C45229007E0B12 /* LogInViewController.swift */,
+				AC30A0B629C4888D007E0B12 /* User.xcdatamodeld */,
 				AC9690D629BCEA00004A8A20 /* Assets.xcassets */,
 				AC9690D829BCEA00004A8A20 /* LaunchScreen.storyboard */,
 				AC9690DB29BCEA00004A8A20 /* Info.plist */,
@@ -137,6 +151,8 @@
 				AC9690D229BCE9FF004A8A20 /* SignInViewController.swift in Sources */,
 				AC9690CE29BCE9FF004A8A20 /* AppDelegate.swift in Sources */,
 				AC30A0B229C45229007E0B12 /* LogInViewController.swift in Sources */,
+				AC30A0B429C47B71007E0B12 /* UITextField.swift in Sources */,
+				AC30A0B829C4888D007E0B12 /* User.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +360,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AC30A0B629C4888D007E0B12 /* User.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AC30A0B729C4888D007E0B12 /* User.xcdatamodel */,
+			);
+			currentVersion = AC30A0B729C4888D007E0B12 /* User.xcdatamodel */;
+			path = User.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AC9690C229BCE9FF004A8A20 /* Project object */;
 }
