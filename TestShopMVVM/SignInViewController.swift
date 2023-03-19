@@ -9,6 +9,8 @@ import UIKit
 
 class SignInViewController: UIViewController {
     
+    private var users: [NewUser] = []
+    
     private let singInLabel: UILabel = {
         let label = UILabel()
         label.text = "Sign in"
@@ -175,7 +177,40 @@ class SignInViewController: UIViewController {
         setupElements(singInLabel, textFieldStackView, haveAccountStackView, signInGoogleStackView, signInAppleStackView)
         setupSubViews(singInLabel, textFieldStackView, haveAccountStackView, signInGoogleStackView, signInAppleStackView)
         setupConstraints()
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        loadUsers()
+    }
+    
+    private func loadUsers() {
+        StorageManager.shared.fetchUsers { result in
+            switch result {
+            case .success(let users):
+                self.users = users
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    private func isValidEmail(_ email: String) -> Bool {
+        let rightExOfMail = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", rightExOfMail)
+        return emailPred.evaluate(with: email)
+    }
+    
+    private func checkNewUserEmail(_ email: String) -> Bool {
+        var result = false
+        users.map { user in
+            if user.mail == email {
+                result = true
+                return
+            }
+        }
+        return result
     }
     
     @objc private func logInButtonTapped() {
@@ -184,9 +219,31 @@ class SignInViewController: UIViewController {
     }
     
     @objc private func signInButtonTapped() {
+        guard let inputNameText = firstNameTextField.text, !inputNameText.isEmpty else {return}
+        let inputNameTrimmingText = inputNameText.trimmingCharacters(in: .whitespaces)
+
+        guard let inputSecondNameText = secondNameTextField.text, !inputSecondNameText.isEmpty else {return}
+        let inpetSecondNameTrimmingText = inputSecondNameText.trimmingCharacters(in: .whitespaces)
+
+        guard let inputMailText = emailTextField.text, !inputMailText.isEmpty else {return}
+        let inputeMailTrimmingText = inputMailText.trimmingCharacters(in: .whitespaces)
         
+        if isValidEmail(inputeMailTrimmingText) {
+            print("Email is valid")
+        } else {
+            print("Email isn't valid")
+            return
+        }
+                  
+        if checkNewUserEmail(inputeMailTrimmingText) {
+            print("You have an account")
+        } else {
+            StorageManager.shared.saveUser(name: inputNameTrimmingText, secondName: inpetSecondNameTrimmingText, mail: inputeMailTrimmingText)
+            
+            let page1VC = Page1ViewController()
+            show(page1VC, sender: nil)
+        }
     }
-    
     
     func setupElements(_ subViews: UIView...) {
         subViews.forEach { $0.translatesAutoresizingMaskIntoConstraints = false

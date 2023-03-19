@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		AC30A0B229C45229007E0B12 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30A0B129C45229007E0B12 /* LogInViewController.swift */; };
 		AC30A0B429C47B71007E0B12 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30A0B329C47B71007E0B12 /* UITextField.swift */; };
-		AC30A0B829C4888D007E0B12 /* User.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC30A0B629C4888D007E0B12 /* User.xcdatamodeld */; };
+		AC30A0B829C4888D007E0B12 /* UserRegistrationData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC30A0B629C4888D007E0B12 /* UserRegistrationData.xcdatamodeld */; };
+		AC30A0BA29C489D4007E0B12 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30A0B929C489D4007E0B12 /* StorageManager.swift */; };
+		AC30A0BC29C5BBCD007E0B12 /* Page1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30A0BB29C5BBCD007E0B12 /* Page1ViewController.swift */; };
 		AC9690CE29BCE9FF004A8A20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9690CD29BCE9FF004A8A20 /* AppDelegate.swift */; };
 		AC9690D229BCE9FF004A8A20 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9690D129BCE9FF004A8A20 /* SignInViewController.swift */; };
 		AC9690D729BCEA00004A8A20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9690D629BCEA00004A8A20 /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 		AC30A0B129C45229007E0B12 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		AC30A0B329C47B71007E0B12 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		AC30A0B729C4888D007E0B12 /* User.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = User.xcdatamodel; sourceTree = "<group>"; };
+		AC30A0B929C489D4007E0B12 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		AC30A0BB29C5BBCD007E0B12 /* Page1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1ViewController.swift; sourceTree = "<group>"; };
 		AC9690CA29BCE9FF004A8A20 /* TestShopMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestShopMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9690CD29BCE9FF004A8A20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC9690D129BCE9FF004A8A20 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -70,7 +74,9 @@
 				AC9690CD29BCE9FF004A8A20 /* AppDelegate.swift */,
 				AC9690D129BCE9FF004A8A20 /* SignInViewController.swift */,
 				AC30A0B129C45229007E0B12 /* LogInViewController.swift */,
-				AC30A0B629C4888D007E0B12 /* User.xcdatamodeld */,
+				AC30A0BB29C5BBCD007E0B12 /* Page1ViewController.swift */,
+				AC30A0B929C489D4007E0B12 /* StorageManager.swift */,
+				AC30A0B629C4888D007E0B12 /* UserRegistrationData.xcdatamodeld */,
 				AC9690D629BCEA00004A8A20 /* Assets.xcassets */,
 				AC9690D829BCEA00004A8A20 /* LaunchScreen.storyboard */,
 				AC9690DB29BCEA00004A8A20 /* Info.plist */,
@@ -151,8 +157,10 @@
 				AC9690D229BCE9FF004A8A20 /* SignInViewController.swift in Sources */,
 				AC9690CE29BCE9FF004A8A20 /* AppDelegate.swift in Sources */,
 				AC30A0B229C45229007E0B12 /* LogInViewController.swift in Sources */,
+				AC30A0BA29C489D4007E0B12 /* StorageManager.swift in Sources */,
+				AC30A0BC29C5BBCD007E0B12 /* Page1ViewController.swift in Sources */,
 				AC30A0B429C47B71007E0B12 /* UITextField.swift in Sources */,
-				AC30A0B829C4888D007E0B12 /* User.xcdatamodeld in Sources */,
+				AC30A0B829C4888D007E0B12 /* UserRegistrationData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,13 +370,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		AC30A0B629C4888D007E0B12 /* User.xcdatamodeld */ = {
+		AC30A0B629C4888D007E0B12 /* UserRegistrationData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				AC30A0B729C4888D007E0B12 /* User.xcdatamodel */,
 			);
 			currentVersion = AC30A0B729C4888D007E0B12 /* User.xcdatamodel */;
-			path = User.xcdatamodeld;
+			path = UserRegistrationData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -21,7 +21,7 @@ class LogInViewController: UIViewController {
         name.borderStyle = .roundedRect
         name.returnKeyType = .next
         name.placeholder = "First name"
-        name.textAlignment = .center
+    //    name.textAlignment = .center
         name.backgroundColor = UIColor(red: 0.90980, green: 0.90980, blue: 0.90980, alpha: 1)
         name.layer.masksToBounds = true
         name.layer.cornerRadius = 15
@@ -35,7 +35,7 @@ class LogInViewController: UIViewController {
         name.placeholder = "Password"
         name.enablePasswordToggle()
         name.isSecureTextEntry = true
-        name.textAlignment = .center
+      //  name.textAlignment = .center
         name.backgroundColor = UIColor(red: 0.90980, green: 0.90980, blue: 0.90980, alpha: 1)
         name.layer.masksToBounds = true
         name.layer.cornerRadius = 15
