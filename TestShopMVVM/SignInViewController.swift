@@ -215,6 +215,7 @@ class SignInViewController: UIViewController {
     
     @objc private func logInButtonTapped() {
         let logInVC = LogInViewController()
+        logInVC.users = users
         show(logInVC, sender: nil)
     }
     

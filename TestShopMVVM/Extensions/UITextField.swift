@@ -12,8 +12,7 @@ let button = UIButton(type: .custom)
 
 extension UITextField {
     
-    func enablePasswordToggle(){
-        
+    func enablePasswordToggle() {
         button.setImage(UIImage(named: "secure"), for: .normal)
         button.heightAnchor.constraint(equalToConstant: 20).isActive = true
         button.widthAnchor.constraint(equalToConstant: 45).isActive = true
