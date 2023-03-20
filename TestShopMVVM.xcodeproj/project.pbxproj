@@ -12,6 +12,11 @@
 		AC30A0B829C4888D007E0B12 /* UserRegistrationData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC30A0B629C4888D007E0B12 /* UserRegistrationData.xcdatamodeld */; };
 		AC30A0BA29C489D4007E0B12 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30A0B929C489D4007E0B12 /* StorageManager.swift */; };
 		AC30A0BC29C5BBCD007E0B12 /* Page1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30A0BB29C5BBCD007E0B12 /* Page1ViewController.swift */; };
+		AC30A0BE29C78291007E0B12 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30A0BD29C78291007E0B12 /* TabBarViewController.swift */; };
+		AC30A0C529C784F5007E0B12 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30A0C429C784F5007E0B12 /* FavoriteViewController.swift */; };
+		AC30A0C729C78507007E0B12 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30A0C629C78507007E0B12 /* BasketViewController.swift */; };
+		AC30A0C929C7852A007E0B12 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30A0C829C7852A007E0B12 /* ChatViewController.swift */; };
+		AC30A0CB29C78571007E0B12 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30A0CA29C78571007E0B12 /* ProfileViewController.swift */; };
 		AC9690CE29BCE9FF004A8A20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9690CD29BCE9FF004A8A20 /* AppDelegate.swift */; };
 		AC9690D229BCE9FF004A8A20 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9690D129BCE9FF004A8A20 /* SignInViewController.swift */; };
 		AC9690D729BCEA00004A8A20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9690D629BCEA00004A8A20 /* Assets.xcassets */; };
@@ -24,6 +29,11 @@
 		AC30A0B729C4888D007E0B12 /* User.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = User.xcdatamodel; sourceTree = "<group>"; };
 		AC30A0B929C489D4007E0B12 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		AC30A0BB29C5BBCD007E0B12 /* Page1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1ViewController.swift; sourceTree = "<group>"; };
+		AC30A0BD29C78291007E0B12 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		AC30A0C429C784F5007E0B12 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		AC30A0C629C78507007E0B12 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
+		AC30A0C829C7852A007E0B12 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		AC30A0CA29C78571007E0B12 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		AC9690CA29BCE9FF004A8A20 /* TestShopMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestShopMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9690CD29BCE9FF004A8A20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC9690D129BCE9FF004A8A20 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +61,55 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		AC30A0BF29C7835C007E0B12 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC9690D129BCE9FF004A8A20 /* SignInViewController.swift */,
+				AC30A0B129C45229007E0B12 /* LogInViewController.swift */,
+				AC30A0BD29C78291007E0B12 /* TabBarViewController.swift */,
+				AC30A0BB29C5BBCD007E0B12 /* Page1ViewController.swift */,
+				AC30A0C429C784F5007E0B12 /* FavoriteViewController.swift */,
+				AC30A0C629C78507007E0B12 /* BasketViewController.swift */,
+				AC30A0C829C7852A007E0B12 /* ChatViewController.swift */,
+				AC30A0CA29C78571007E0B12 /* ProfileViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AC30A0C029C78376007E0B12 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AC9690CD29BCE9FF004A8A20 /* AppDelegate.swift */,
+				AC9690D829BCEA00004A8A20 /* LaunchScreen.storyboard */,
+				AC9690DB29BCEA00004A8A20 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AC30A0C129C7837F007E0B12 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC30A0B629C4888D007E0B12 /* UserRegistrationData.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AC30A0C229C78393007E0B12 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AC30A0B929C489D4007E0B12 /* StorageManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AC30A0C329C783B5007E0B12 /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				AC9690D629BCEA00004A8A20 /* Assets.xcassets */,
+			);
+			name = Resouces;
+			sourceTree = "<group>";
+		};
 		AC9690C129BCE9FF004A8A20 = {
 			isa = PBXGroup;
 			children = (
@@ -70,16 +129,12 @@
 		AC9690CC29BCE9FF004A8A20 /* TestShopMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				AC30A0BF29C7835C007E0B12 /* ViewControllers */,
 				AC30A0B529C47B7B007E0B12 /* Extensions */,
-				AC9690CD29BCE9FF004A8A20 /* AppDelegate.swift */,
-				AC9690D129BCE9FF004A8A20 /* SignInViewController.swift */,
-				AC30A0B129C45229007E0B12 /* LogInViewController.swift */,
-				AC30A0BB29C5BBCD007E0B12 /* Page1ViewController.swift */,
-				AC30A0B929C489D4007E0B12 /* StorageManager.swift */,
-				AC30A0B629C4888D007E0B12 /* UserRegistrationData.xcdatamodeld */,
-				AC9690D629BCEA00004A8A20 /* Assets.xcassets */,
-				AC9690D829BCEA00004A8A20 /* LaunchScreen.storyboard */,
-				AC9690DB29BCEA00004A8A20 /* Info.plist */,
+				AC30A0C229C78393007E0B12 /* Services */,
+				AC30A0C129C7837F007E0B12 /* Models */,
+				AC30A0C329C783B5007E0B12 /* Resouces */,
+				AC30A0C029C78376007E0B12 /* App */,
 			);
 			path = TestShopMVVM;
 			sourceTree = "<group>";
@@ -154,9 +209,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC30A0C729C78507007E0B12 /* BasketViewController.swift in Sources */,
+				AC30A0BE29C78291007E0B12 /* TabBarViewController.swift in Sources */,
+				AC30A0C929C7852A007E0B12 /* ChatViewController.swift in Sources */,
 				AC9690D229BCE9FF004A8A20 /* SignInViewController.swift in Sources */,
 				AC9690CE29BCE9FF004A8A20 /* AppDelegate.swift in Sources */,
 				AC30A0B229C45229007E0B12 /* LogInViewController.swift in Sources */,
+				AC30A0CB29C78571007E0B12 /* ProfileViewController.swift in Sources */,
+				AC30A0C529C784F5007E0B12 /* FavoriteViewController.swift in Sources */,
 				AC30A0BA29C489D4007E0B12 /* StorageManager.swift in Sources */,
 				AC30A0BC29C5BBCD007E0B12 /* Page1ViewController.swift in Sources */,
 				AC30A0B429C47B71007E0B12 /* UITextField.swift in Sources */,
@@ -301,7 +361,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QQ7NB58NL6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TestShopMVVM/Info.plist;
+				INFOPLIST_FILE = TestShopMVVM/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -328,7 +388,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QQ7NB58NL6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TestShopMVVM/Info.plist;
+				INFOPLIST_FILE = TestShopMVVM/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

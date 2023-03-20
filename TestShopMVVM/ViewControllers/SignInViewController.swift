@@ -241,8 +241,8 @@ class SignInViewController: UIViewController {
         } else {
             StorageManager.shared.saveUser(name: inputNameTrimmingText, secondName: inpetSecondNameTrimmingText, mail: inputeMailTrimmingText)
             
-            let page1VC = Page1ViewController()
-            show(page1VC, sender: nil)
+            let tbVC = TabBarViewController()
+            show(tbVC, sender: nil)
         }
     }
     

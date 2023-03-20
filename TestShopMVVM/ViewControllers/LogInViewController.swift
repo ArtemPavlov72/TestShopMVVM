@@ -109,8 +109,8 @@ class LogInViewController: UIViewController {
         }
         
         if checkUser(name: inputNameTrimmingText, email: inputeMailTrimmingText) {
-            let page1VC = Page1ViewController()
-            show(page1VC, sender: nil)
+            let tbVC = TabBarViewController()
+            show(tbVC, sender: nil)
         } else {
             print("Wrong user")
         }
